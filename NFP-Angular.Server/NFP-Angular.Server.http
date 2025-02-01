@@ -1,0 +1,6 @@
+@NFP_Angular.Server_HostAddress = http://localhost:5027
+
+GET {{NFP_Angular.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
