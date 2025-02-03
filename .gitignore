@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/nfp-angular.client/src/app/directives/highlights.directive.spec.ts
