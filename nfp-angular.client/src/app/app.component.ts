@@ -15,6 +15,7 @@ interface WeatherForecast {
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+
   public forecasts: WeatherForecast[] = [];
 
   constructor(private http: HttpClient) {}
@@ -22,16 +23,21 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getForecasts();
   }
+  
+  message: string = 'Gokul';
 
+  receiveMessage(event: string) {
+    this.message = event;
+  }
   getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
-      (result) => {
-        this.forecasts = result;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+    //this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
+    //  (result) => {
+    //    this.forecasts = result;
+    //  },
+    //  (error) => {
+    //    console.error(error);
+    //  }
+    //);
   }
 
   title = 'nfp-angular.client';

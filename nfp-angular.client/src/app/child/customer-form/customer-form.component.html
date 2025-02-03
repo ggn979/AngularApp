@@ -1,0 +1,9 @@
+<br/>
+<b>Child Component:</b>
+<br />
+<input type="text" [(ngModel)]="cFullName" placeholder="Enter text"  (ngModelChange)="sendMessage()" />
+<br />
+<br />
+<button (textChanged)="sendMessage()">Send full to Parent</button>
+
+
